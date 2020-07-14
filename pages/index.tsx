@@ -1,17 +1,13 @@
-import { HelloWorld } from 'components'
-import Head from 'next/head'
-import React from 'react'
+import { HelloWorld } from 'components';
+import { Page } from 'components/UI';
+import React from 'react';
 
 const App = () => {
-  return (
-    <>
-      <Head>
-        <title>dumb</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <HelloWorld />
-    </>
-  )
-}
+	return (
+		<Page title="index">
+			<HelloWorld />
+		</Page>
+	);
+};
 
-export default App
+export default App;

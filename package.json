@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prettier": "prettier --config ./.prettierrc --write **/*.{ts,tsx}"
   },
   "husky": {
     "hooks": {
@@ -13,7 +14,7 @@
     }
   },
   "lint-staged": {
-    "*.{css,js,jsx,json,ts,tsx}": [
+    "*.{ts,tsx}": [
       "prettier --write",
       "git add"
     ]
