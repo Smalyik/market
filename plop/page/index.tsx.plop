@@ -1,0 +1,11 @@
+import React from 'react';
+
+const {{pascalCase pageName}}: React.FC = () => {
+	return (
+		<div>
+			<span>{{pascalCase pageName}}</span>
+		</div>
+	);
+};
+
+export default {{pascalCase pageName}};
