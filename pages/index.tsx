@@ -1,18 +1,17 @@
-import Flex from 'components/Flex'
+import { HelloWorld } from 'components'
 import Head from 'next/head'
 import React from 'react'
 
-const Hello = () => {
+const App = () => {
   return (
     <>
       <Head>
         <title>dumb</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Flex/>
+      <HelloWorld />
     </>
   )
 }
 
-export default Hello
+export default App

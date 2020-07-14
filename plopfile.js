@@ -21,6 +21,11 @@ module.exports = function(plop) {
 					path: 'components/{{properCase componentName}}/{{properCase componentName}}.module.sass',
 					templateFile: './plop/component/component.module.sass.plop',
 				},
+				{
+					type: 'append',
+					path: 'components/index.ts',
+					templateFile: './plop/component/export.plop',
+				},
 			];
 
 			actions.push({
