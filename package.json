@@ -7,6 +7,17 @@
     "build": "next build",
     "start": "next start"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{css,js,jsx,json,ts,tsx}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "dependencies": {
     "@types/axios": "^0.14.0",
     "@types/node": "^14.0.23",
@@ -18,6 +29,9 @@
     "sass": "^1.26.10"
   },
   "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
     "typescript": "^3.9.6"
   }
 }
